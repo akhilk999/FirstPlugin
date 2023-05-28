@@ -1,0 +1,4 @@
+name: FirstPlugin
+version: '${project.version}'
+main: org.akhilk999.firstplugin.FirstPlugin
+api-version: 1.19
