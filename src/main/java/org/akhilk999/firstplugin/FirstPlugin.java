@@ -5,13 +5,13 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class FirstPlugin extends JavaPlugin {
 
     @Override
-    public void onEnable() {
-        // Plugin startup logic
-
+    public void onEnable() { // Plugin startup logic
+        //enables Listener class (PlayerMovementListener) to be used by the server
+        getServer().getPluginManager().registerEvents(new PlayerMovementListener(), this);
     }
 
     @Override
-    public void onDisable() {
-        // Plugin shutdown logic
+    public void onDisable() { // Plugin shutdown logic
+
     }
 }
